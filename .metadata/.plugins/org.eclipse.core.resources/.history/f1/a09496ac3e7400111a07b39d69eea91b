@@ -1,0 +1,13 @@
+
+public class BookService {
+	boolean save(Buch b);
+
+    Buch find(int isbn) throws BookNotFoundException;
+
+    List<Buch> list();
+
+    boolean delete(int isbn) throws BookNotFoundException;
+    
+    List<Buch> findByPrice(double min, double max);
+
+}
